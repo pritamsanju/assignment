@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="frontEnd.master.cs" Inherits="spotnews.frontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to spotnews..</title>
+  
+    <style>
+        .logoDiv
+        {
+            background-color:#6d90cf;
+            padding:10px;
+            height:auto;
+            margin-bottom:2px;
+        }
+            .logoDiv img
+            {
+                height:100px;
+                width:300px;
+            }
+        .newsMenu
+        {
+            background-color:#6d90cf;
+            padding:5px;
+            color:white;
+        }
+       ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display:inline;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+            li a
+            {
+                font-size:medium;
+                    
+                color:white;
+            }
+             .frontFooter
+         {
+             background-color:#968e8e;
+             color:white;
+             padding:10px;
+             height:auto;
+             font-family:Calibri;
+             min-height:20px;
+             min-width:100%;
+             font-size:medium;
+             
+         }
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<!-- custom css -->
+    <link href="CustomCSS.css" rel="stylesheet" />
+    <!-- animation -->
+    <link href="animate.css" rel="stylesheet" />
+    <!-- jquery -->
+    <script src="jquery-3.1.1.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="logoDiv">
+           <div class="container">
+                <div class="row">
+                   <div class="col-xs-3 col-xs-offset-4">
+                       <a href="home.aspx">
+                           <img src="spotnewsLogo.png" alt="spotnews.com" class="img-responsive"/>
+                       </a>
+                   </div><!--end of col -->
+                    <div class="col-xs-2 col-xs-offset-3">
+                         <button id="btnlogin" type="button" data-target="#loginModal"data-toggle="modal" class="btn btn-info btn-sm">login</button>
+                         <a href="javascript:__doPostBack('ctl00$btntowriter','')">lll</a></div><!--end of col -->
+                </div><!--end of row -->
+           </div><!--end of container -->         
+        </div><!--end of logoDiv -->
+    
+
+        <div class="newsMenu">
+             <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-2">
+                        <ul>
+                            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/sports.aspx">sports</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/politics.aspx">politics</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/arts.aspx">arts</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/entertainment.aspx">entertainment</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/agriculture.aspx">agriculture</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/fianance.aspx">finance</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/science-technology.aspx">science & technology</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+             </div><!--end of container --> 
+        </div>
+        <!-- end of menubar-->
+
+        <!--login register modal -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal animated fadeIn" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Login to Spotnews.com!</h4>
+                                    </div><!--end of modal header -->
+                                    <div class="modal-body">
+                                         <div class="form-group">
+                                             <asp:Label ID="Label1" runat="server" Text="username"></asp:Label>
+                                             <asp:TextBox ID="textbox_username" CssClass="form-control" placeholder="Enter username" runat="server"></asp:TextBox>
+                                         </div><!--end of form group -->                                         
+                                        <div class="form-group">
+                                             <asp:Label ID="Label2" runat="server" Text="password"></asp:Label>
+                                             <asp:TextBox ID="textbox_password" CssClass="form-control" placeholder="Enter password" runat="server" TextMode="Password"></asp:TextBox>
+                                         </div><!--end of form group -->                                         
+                                    </div><!--end of modal-body -->
+                                    <div class="modal-footer">
+                                        <asp:Button ID="btn_login" CssClass="btn btn-primary" runat="server" Text="Login" OnClick="btn_login_Click" />
+                                        <asp:Button ID="btn_register" CssClass="btn btn-primary" runat="server" Text="register" OnClick="btn_register_Click" />
+                                        <asp:Label ID="Label3" runat="server" Visible="false" ForeColor="red"></asp:Label>
+                                    </div><!--end of modal footer -->
+
+                                </div><!--end of modal-content-->
+                            </div><!--end of modal-dialog -->
+                        </div><!--end of modal -->
+                    </div><!--end of col -->
+                </div><!--end of row -->
+            </div>
+        <!--end of container -->
+        <!--login register modal -->
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="frontFooter">
+                <div class="footerHead">
+                    <h1 class="text-center">Spotnews</h1><hr />
+                    <p class="text-center">
+                            Like us on..<br /><br />
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/sociallinkImages/facebook.png" OnClick="ImageButton1_Click"/>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/sociallinkImages/google-plus.png" OnClick="ImageButton2_Click"/>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/sociallinkImages/twitter.png" OnClick="ImageButton3_Click"/><br />
+                        &copy copyright to spotnews organization
+                    </p>
+                </div><!--end of footerHead -->
+            </div>
+        <!-- end of frontFooter-->
+    
+    </form>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

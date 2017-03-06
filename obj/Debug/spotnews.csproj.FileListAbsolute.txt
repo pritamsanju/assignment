@@ -1,0 +1,10 @@
+P:\spotnews\spotnews\bin\spotnews.dll
+P:\spotnews\spotnews\bin\spotnews.pdb
+P:\spotnews\spotnews\obj\Debug\spotnews.dll
+P:\spotnews\spotnews\obj\Debug\spotnews.pdb
+P:\spotnews\spotnews\obj\Debug\spotnews.csprojResolveAssemblyReference.cache
+C:\Users\Pritam Soni\Desktop\project2\spotnews\spotnews\bin\spotnews.dll
+C:\Users\Pritam Soni\Desktop\project2\spotnews\spotnews\bin\spotnews.pdb
+C:\Users\Pritam Soni\Desktop\project2\spotnews\spotnews\obj\Debug\spotnews.csprojResolveAssemblyReference.cache
+C:\Users\Pritam Soni\Desktop\project2\spotnews\spotnews\obj\Debug\spotnews.dll
+C:\Users\Pritam Soni\Desktop\project2\spotnews\spotnews\obj\Debug\spotnews.pdb

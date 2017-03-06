@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{658C8C68-F863-4E84-B2C0-B504D76A500E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>spotnews</RootNamespace>
+    <AssemblyName>spotnews</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="agriculture.aspx" />
+    <Content Include="animate.css" />
+    <Content Include="arts.aspx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="CustomCSS.css" />
+    <Content Include="customJS.js" />
+    <Content Include="entertainment.aspx" />
+    <Content Include="fianance.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="home.aspx" />
+    <Content Include="homepageImages\agricarousel.jpg" />
+    <Content Include="homepageImages\agrifront.jpg" />
+    <Content Include="homepageImages\artsfront.png" />
+    <Content Include="homepageImages\entercarousel.jpg" />
+    <Content Include="homepageImages\entertainmentfront.jpg" />
+    <Content Include="homepageImages\fianancecarousel.jpg" />
+    <Content Include="homepageImages\financefront.jpg" />
+    <Content Include="homepageImages\politicsfront.jpg" />
+    <Content Include="homepageImages\scicarousel.jpg" />
+    <Content Include="homepageImages\sportsfront.jpg" />
+    <Content Include="jquery-3.1.1.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="newsInfo.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="science-technology.aspx" />
+    <Content Include="sociallinkImages\facebook.png" />
+    <Content Include="sociallinkImages\google-plus.png" />
+    <Content Include="sociallinkImages\twitter.png" />
+    <Content Include="sports.aspx" />
+    <Content Include="spotnewsComments.asmx" />
+    <Content Include="spotnewsLogo.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="politics.aspx" />
+    <Content Include="writers\add-new-news.aspx" />
+    <Content Include="writers\addImages.aspx" />
+    <Content Include="writers\delete-news.aspx" />
+    <Content Include="writers\settings.aspx" />
+    <Content Include="writers\update-news.aspx" />
+    <Content Include="writers\writer-login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agriculture.aspx.cs">
+      <DependentUpon>agriculture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agriculture.aspx.designer.cs">
+      <DependentUpon>agriculture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="arts.aspx.cs">
+      <DependentUpon>arts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="arts.aspx.designer.cs">
+      <DependentUpon>arts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comments.cs" />
+    <Compile Include="entertainment.aspx.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="entertainment.aspx.designer.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fianance.aspx.cs">
+      <DependentUpon>fianance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fianance.aspx.designer.cs">
+      <DependentUpon>fianance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frontEnd.Master.cs">
+      <DependentUpon>frontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frontEnd.Master.designer.cs">
+      <DependentUpon>frontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newsInfo.aspx.cs">
+      <DependentUpon>newsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsInfo.aspx.designer.cs">
+      <DependentUpon>newsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="science-technology.aspx.cs">
+      <DependentUpon>science-technology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="science-technology.aspx.designer.cs">
+      <DependentUpon>science-technology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sports.aspx.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sports.aspx.designer.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="politics.aspx.cs">
+      <DependentUpon>politics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="politics.aspx.designer.cs">
+      <DependentUpon>politics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spotnewsComments.asmx.cs">
+      <DependentUpon>spotnewsComments.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usersessions.cs" />
+    <Compile Include="writers\add-new-news.aspx.cs">
+      <DependentUpon>add-new-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\add-new-news.aspx.designer.cs">
+      <DependentUpon>add-new-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\addImages.aspx.cs">
+      <DependentUpon>addImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\addImages.aspx.designer.cs">
+      <DependentUpon>addImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\delete-news.aspx.cs">
+      <DependentUpon>delete-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\delete-news.aspx.designer.cs">
+      <DependentUpon>delete-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\update-news.aspx.cs">
+      <DependentUpon>update-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\update-news.aspx.designer.cs">
+      <DependentUpon>update-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\writer-login.aspx.cs">
+      <DependentUpon>writer-login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\writer-login.aspx.designer.cs">
+      <DependentUpon>writer-login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writers\writers.Master.cs">
+      <DependentUpon>writers.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writers\writers.Master.designer.cs">
+      <DependentUpon>writers.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="frontEnd.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="writers\writers.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\" />
+    <Folder Include="UploadImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50777/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

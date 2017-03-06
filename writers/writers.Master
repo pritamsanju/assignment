@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="writers.Master.cs" Inherits="spotnews.writers.writes" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to SpotNews,daily news for all your favourite feilds... </title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+	<!-- animation -->
+    <link href="../animate.css" rel="stylesheet" />
+	<!-- custom css -->
+    <link href="../CustomCSS.css" rel="stylesheet" />
+    <!-- jquery -->
+    <script src="../jquery-3.1.1.js"></script>
+    <!-- custom js -->
+    <script src="../customJS.js"></script>
+    <style>
+        .top-bar-master
+{
+  padding:10px;
+  background-color:#6d90cf;
+  min-height:75px;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="top-bar-master">
+           <div class="col-xs-6 left">
+               <h3><b>Welcome to Spotnews Writer's DashBoard !</b></h3>
+           </div><!--end of col -->
+           <div class="col-xs-2 col-xs-offset-4">
+               <asp:Label ID="lblUserName" runat="server" ForeColor="White" Font-Bold="true"></asp:Label>
+               <asp:LinkButton ID="btnLogout" runat="server" ForeColor="WhiteSmoke" OnClick="btnLogout_Click">logout</asp:LinkButton>
+           </div><!--end of col -->
+       </div><!--end of top-bar-master -->
+                
+            <div class="left-navigation-panel">
+                <div class="divAdding">
+                    <a href="add-new-news.aspx">
+                        <p>Add New News</p>
+                    </a>
+                </div><!-- end of adding -->
+                <div class="divUpdating">
+                    <a href="update-news.aspx">
+                        <p>Update News</p>
+                    </a>
+                </div><!-- end of adding -->
+                <div class="divDeleting">
+                    <a href="delete-news.aspx">
+                        <p>Delete News</p>
+                    </a>
+                </div><!-- end of adding -->
+                <div class="divSetting">
+                    <a href="settings.aspx">
+                        <p>account settings</p>
+                    </a>
+                </div><!-- end of adding -->
+            </div>
+        <!-- end of left-navigation-panel-->
+            <div class="right-navigation-panel">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>        
+            </div><!-- end of right-navigation-panel-->    
+    </form>
+</body>
+</html>
