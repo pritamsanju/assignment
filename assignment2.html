@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Assignment2</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/sb-admin.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/dasbord.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script src="js/formvalidation.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand logo-design" href="#"><img src="images/logo.png" /></a>
+
+		</div>
+
+		<!-- Top Menu Items -->
+		<ul class="nav navbar-right top-nav">
+
+			<li class="dropdown user-profile-wrap">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user-profile-pic"><img src ="images/default-img.png" alt="" class="img-responsive" /></span> <span class="pull-left user-profile-wrap-inner">USER<br>
+					<small class="text-uppercase header-destignation col-12 pull-left">Owner</small>
+					<small class="header-destignation col-12 pull-left">STARTUP ELVES</small></span>
+					<b class="caret pull-right"></b>
+				</a>
+
+
+				<ul class="dropdown-menu message-dropdown text-uppercase">
+					<li class="col-12 pull-left">
+						<div class="row">
+
+							<div class="col-md-4">
+								<ul class="list-unstyled user-profile-list">
+									<li><a href=""><i class="fa fa-user"></i>&nbsp;&nbsp;PROFILE</a></li>
+									<li><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;NOTIFICATION</a></li>
+									<li><a href=""><i class="fa fa-sign-out"></i>&nbsp;&nbsp;LOGOUT</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+			</li>
+		</ul>
+
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav side-nav text-uppercase">
+				<li class="active">
+					<a href="#"></i>HOME</a>
+				</li>
+				<li>
+					<a href="#">CONTACT</a>
+				</li>
+				<li>
+					<a href="#">LIST</a>
+				</li>
+
+
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</nav>
+	<div id="page-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-center">
+						<h1>CONTACT US</h1>
+					</div>
+
+				</div>
+
+
+
+			</div>
+			<div class="col-md-12 col-md-12 col-md-12">
+				<div class="sub-section">
+
+					<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+						<fieldset>
+
+							<div class="form-group">
+								<label class="col-md-4 control-label">EMAIL</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+
+							<!-- Text input-->
+
+							<div class="form-group">
+								<label class="col-md-4 control-label" >NAME</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label">REMARK</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"></span>
+										<textarea class="form-control" rows="5" id="comment"></textarea>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+							<div class="form-group">
+								<label class="col-md-4 control-label"></label>
+								<div class="col-md-4">
+									<button type="submit" class="btn btn-warning" >SUBMIT<span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container-fluid -->
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="footer-section">
+
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<div class="pull-left heading">
+						<h4>FIXED FOOTER</h4>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<div class="pull-right heading">
+						<h4>STARTUP ELVES</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>

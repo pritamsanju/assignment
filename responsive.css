@@ -1,0 +1,19 @@
+@media (min-width:768px) and (max-width:980px){
+.notification-wrap{width:312px;}
+.cl-heading h1{font-size:22px;}
+}
+@media (min-width:480px) and (max-width:768px){
+.notification-wrap{width:310px;}
+}
+@media (min-width:0px) and (max-width:480px){
+.navbar-brand {height:66px;padding:6px 10px;margin-left:15px; }
+.btn-common{margin-bottom:10px;}
+#page-wrapper{padding:50px 0px;}
+.dropdown-menu{width:100%;}
+
+.progress-bar-wrap{display:none;}
+.margin-top-small{margin-top:50px;}
+.list-dept-wrap{margin-top:0px;}
+} 
+	
+	

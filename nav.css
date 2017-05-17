@@ -1,0 +1,173 @@
+
+.top-nav {
+    padding: -18px 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: #999;
+}
+
+	
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+.side-nav
+{
+    height: 500px;
+}
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 40px;
+        left: 225px;
+        width: 185px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #343942;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+		margin-top:30px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #2B2F35 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+.user-profile-wrap{margin-top:-11px;}
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color.navbar-header: #fff;
+}
+.navbar-inverse{background:#343942; height: 67px;}
+.navbar-brand{/* background:#2B2F35; */padding:15px 56px;height:80px;}
+.navbar{min-height:70px;}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > 
+.navbar-header{background:#343942;}
+@media (min-width:768px) and (max-width:991px)
+{
+  .navbar{min-height:70px; width:100%;}
+  .nav{margin-left:-226px;}
+   h4{margin-top:34px;margin-left:-53px;}
+   .user-profile-wrap { margin-top: 86px;}
+   .notification-wrap{display:none;}
+   .caret{margin-top:16px;}
+   .top-nav>.open>.dropdown-menu{margin-top:-18px;}
+   .view-enter-wrap{margin-top:-45px;}
+   .user-profile-wrap {margin-top:78px;}
+ }
+@media (min-width:480px) and (max-width:767px) and (orientation : landscape)
+{
+       .navbar{max-height:60px;}
+	   .navbar-brand{padding:15px 56px;height:80px; margin-left:-41px;}
+	   .top-nav{float:right;}
+	   .top-nav>li>a{padding-bottom:-15px; padding-top:-102px;}
+	   .nav{margin-left:-8px;}
+	   .navbar-toggle {float:left;}
+	   .top-nav>li{margin-top:-92px;}
+	   .user-profile-wrap-inner{margin-right:-10px;}
+	   .nav>li{margin-left:9px; background-color:black;}
+	   .navbar-inverse .navbar-collapse{margin-top:-19px; margin-left:-16px;}
+	   .caret{margin-top:30px;}
+	    h4{margin-top:34px; margin-left:-53px;}
+	    .hotel-name-heading{display:none;}
+	   .notification-wrap{display:none;}
+	   .view-enter-wrap {margin: 23px -37px; margin-top:-45px;}
+	   .user-profile-wrap {margin-top:78px;}
+
+	
+}
+@media(min-width:0px) and (max-width:480px)
+{
+       .navbar{max-height:50px;}
+	   .notification-wrap{display:none;}
+	   .navbar-brand{padding:11px 0px;height:80px;margin-left:-15px;}
+	   .top-nav{float:right;}
+	   .nav{margin-left:197px;}
+	   .navbar-toggle {float:left;}
+	   .top-nav>li{margin-top:-87px;}
+	   .user-profile-wrap-inner{margin-right:-10px;}
+	   .caret{margin-top:33px;}
+	   .nav>li{margin-left:-222px; background-color:black;}
+	   .navbar-inverse .navbar-collapse{margin-top:-22px;}
+	   .navbar-nav>li>a{padding-bottom:-14px; line-height:15px;}
+	   .pull-left{margin-left:8px;}
+	   .hotel-name-heading{display:none;}
+	
+} 
+	

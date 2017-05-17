@@ -1,0 +1,139 @@
+f/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 100px;
+    background-color: #222;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    padding-left:0;
+}
+
+#page-wrapper {
+    width:97%;
+    padding: 0;
+    background-color: #fff;
+
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+
+/*------- custom css --------*/
+s.active > a:hover{background:#2B2F35;}
+.side-nav li a:hover, .side-nav li a:focus{background:#2B2F35;}
+.side-nav{top:81px;}
+#page-wrapper{padding:10px;}
+.user-profile-pic{border-radius: 50%;float: left;height: 50px;overflow: hidden;width:50px;margin-right:10px;}
+.user-profile-wrap-inner{float:left;margin-right:10px;}
+.user-profile-wrap a{float:left;padding:20px 10px;}
+.caret{margin-top:20px;}
+.message-dropdown{font-size:12px;width:661px;}
+.message-dropdown li{width:50%;float:left;}
+.option-profile-wrap{border-top:1px solid #ccc;width:100%;float:left;padding-top:10px;margin-top:10px;}
+.option-profile-wrap a{width:100%;float:left;padding:10px 10px;}
+.progressbar li:before {
+                 width: 50px;
+                 height: 50px;
+                 content: counter(step);
+                 counter-increment: step;
+                 line-height: 50px;
+                 border: 2px solid #343942;
+                 display: block;
+                 text-align: center;
+                 margin: 0 auto 10px auto;
+                 border-radius: 50%;
+                 background:#343942;
+                 font-size:24px;
+                 color:#fff;
+             }
+
+.progress-bar-wrap{background: #f5f7f9 none repeat scroll 0 0;float: left;margin-top: 30px;padding: 24px 0;width: 100%;margin-bottom:20px;	}
+.cl-form-wrap{width:100%;float:left;background: #f5f7f9;}
+.dropdown-menu > li > a{padding:7px 20px;font-weight:bold;}
+.col-12{width:100% !important;position:relative;}
+.cl-heading{background:#343942;color:#fff;}
+.cl-heading h1{margin-top:10px;margin-bottom:10px;font-size:24px;}
+.cl-form-wrap-inner{padding:15px 30px;}
+
+.user-profile-list{background:#2B2F35;width:100%;float:left;padding:10px 0px;min-height:228px;}
+.user-profile-list li{width:100%;float:left;}
+.user-profile-list li:hover{background:#000000;}
+.user-profile-list li a{color:#fff;padding:7px 20px;font-weight:bold;width:100%;float:left;}
+.user-profile-list li a:hover{text-decoration:none;}
+.notification-wrap{color:#fff;width:350px;padding:15px 0 0px;}
+.notification-wrap li{width:50%;float:left;padding:0px 5px 5px;font-size:12px;}
+
+select option{font-weight:normal;font-size:12px;}
+/* The CSS */
+select {
+    padding:3px;
+    margin: 0;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	width:100%;
+	float:left;height:38px;border:1px solid #ccc;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+body {
+  padding : 10px ;
+
+}
+.original {
+
+    float: left;
+}
+.box-right
+{
+
+  height: 50px;
+  line-height: 20px;
+  text-align: center;
+  width: 200px;
+  float:left;
+  margin:0px;
+
+
+
+}
+
+.positioning1
+{
+	    position: absolute;
+    top: 154px;
+    right: 52px;
+}
+
